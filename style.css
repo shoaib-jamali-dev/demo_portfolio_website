@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+nav{
+    padding: 0 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(37, 99, 255);
+    color: #fff;
+    height: 70px;
+}
+
+a{
+    text-decoration: none;
+     color: #fff;
+     margin-left: 30px;
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+
+.intro , .about {
+    display: flex;
+    background-color: #dee3ec;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+
+}
+
+img{
+    margin-left: 20px;
+    border-radius: 50%;
+    border: 1px solid #2563EB;
+    width: 350px;
+    height: 350px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+h1{
+    color: #2563EB;
+    font-size: 3rem;
+    
+}
+
+
+button{
+    background-color: #2563EB;
+    color: #fff;
+    border-radius: 80px;
+    border: none;
+    width: 120px;
+    height: 40px;
+    margin-top: 10px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.detial2{
+    width: 600px;
+    margin-left: 50px;
+}
+
+.about{
+     background-color: #d2daeb;
+}
+
+.myskills{
+    height: 700px;
+     background-color: #becae4;
+
+}
+
+.area{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 80vh;
+    justify-content: space-around;
+}
+
+.card1,.card2,.card3,.card4{
+    border-radius: 40px;
+    padding-top: 50px;
+    text-align: center;
+    background-color: #e0dede;
+    color: #2563EB;
+    width: 310px;
+    height: 330px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.heading1{
+    color: #2563EB;
+    transform: translateY(70px);
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 500px;
+}
+
+.projects{
+    height: 650px;
+    background-color: #c0cfef;
+}
+
+.storage{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70vh;
+    margin: 0 250px;
+}
+.p1,.p2,.p3{
+    padding-top: 60px;
+    height: 190px;
+    width: 200px;
+    background-color: #1664ff;
+    text-align: center;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.projects>.p1>a>i{
+    display: flex;
+    justify-content: center;
+
+    transform: scale(2);
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+h3{
+    color: white;
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0c47be;
+    height: 50px;
+}
+
+footer>p{
+    color: white;
+    font-weight: bold;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+
+@media screen and (min-width: 768px){
+    a{
+        margin-left: 20px;
+    }
+    nav{
+            padding: 0 30px;
+    }
+
+    .intro,.about{
+        flex-direction: column;
+        text-align: center;
+    }
+    .intro img , .about img{
+        margin-bottom: 20px;
+    }
+
+    .heading1{
+        margin-bottom: 20px;
+        transform: translateY(0);
+        font-size: 3.5rem;
+    }
+    .card1,.card2.card3.card4{
+        margin-bottom: 10px;
+    }
+
+    .p1,.p2,.p3{
+        margin-left: 10px;
+        transform: translateX(-100px);
+        padding: 1rem 2rem;
+        text-align: center;
+    }
+    .heading2{
+        transform: translateY(100px);
+        text-align: center;
+    }
+    
+  
+}
+@media screen and (min-width: 480px){
+    .hidden{
+        visibility: visible;
+        margin-left: 600px;
+    }
+    nav{
+        padding: 0 20px 0;
+    }
+
+    ul{
+        visibility: hidden;
+    }
+
+      .intro,.about{
+        flex-direction: column;
+        text-align: center;
+    }
+    .intro img , .about img{
+        margin-bottom: 20px;
+    }
+
+    .heading1{
+        margin-bottom: 20px;
+        transform: translateY(0);
+        font-size: 3.5rem;
+    }
+    .card1,.card2.card3.card4{
+        margin-bottom: 10px;
+    }
+
+    .p1,.p2,.p3{
+        margin-left: 10px;
+        transform: translateX(-100px);
+        padding: 1rem 2rem;
+        text-align: center;
+    }
+    .heading2{
+        transform: translateY(100px);
+        text-align: center;
+    }
+    
+}
